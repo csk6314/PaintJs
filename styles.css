@@ -1,0 +1,59 @@
+@import "reset.css";
+:root {
+    --main-box-shadow : 0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0,0,0,0.08);
+}
+body {
+    background-color: #f6f9fc;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+.canvas {
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: var(--main-box-shadow);
+}
+.controls__colors .control__color {
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--main-box-shadow);
+    border-radius: 25px;
+    cursor: pointer;
+}
+.controls__colors {
+    display: flex;
+}
+.controls {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.controls .controls__btns {
+    margin-bottom: 40px;
+}
+.controls__btns button {
+    all:unset;
+    cursor: pointer;
+    background-color: white;
+    padding: 7px 0px;
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--main-box-shadow);
+    border : 2px solid rgba(0,0,0,0.2);
+    color:rgba(0,0,0,0.6);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+.controls__btns button:active {
+    transform:scale(0.98);
+}
+.controls__range {
+    margin-bottom: 15px;
+}
